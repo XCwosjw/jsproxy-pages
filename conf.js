@@ -23,15 +23,10 @@ jsproxy_config({
       label: '',
       hidden: true,
       lines: {
-        // 收费版（高权重）
-        //'node-cfworker-2.etherdream.com': 4,
-
-        // 免费版（低权重，分摊一些成本）
-        // 每个账号每天 10 万次免费请求，但有频率限制
-        //'b.007.workers.dev': 1,
-        //'b.hehe.workers.dev': 1,
-        //'b.lulu.workers.dev': 1,
-        //'b.jsproxy.workers.dev': 1,
+        'b.007.workers.dev': 1,
+        'b.hehe.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
+        'b.jsproxy.workers.dev': 1,
       }
     }
   },
@@ -51,7 +46,7 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  assets_cdn: 'https://cdn.jsdelivr.net/gh/XCwosjw/jsproxy-pages/assets/',
+  assets_cdn: 'https://cdn.jsdelivr.net/gh/XCwosjw/jsproxy-pages@master/assets/',
 
   // 本地测试时打开，否则访问的是线上的
   // assets_cdn: 'assets/',
